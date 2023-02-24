@@ -1,0 +1,419 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.parent{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.one{
+    width: 70px;
+    height: 70px;
+    background-color: inherit;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: circle 2s linear 0.5s infinite;
+
+}
+@keyframes circle{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+}
+.two{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: brown;
+}
+/* loader-2 */
+.parent-two{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.three{
+    width: 80px;
+    height: 80px;
+    background-color: inherit;
+    border-radius: 50%;
+    border:3px solid white;
+    border-bottom: none;
+    padding: 10px;
+    animation: second 1s linear 0.5s infinite;
+}
+.four{
+    width: 70px;
+    height: 70px;
+    background-color: inherit;
+    border-radius: 50%;
+    border:3px solid brown;
+    border-left: none;
+    border-bottom: none;
+    animation: second 1s linear 0.5s infinite;
+}
+@keyframes second{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* loader-3 */
+.parent-three{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.a{
+    width: 60px;
+    height: 20px;
+    background-color: inherit;
+    border: 2px solid white;
+    border-bottom: none;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: a 0.5s linear 0.5s infinite;
+}
+@keyframes a{
+    0%{
+        border: 2px solid white;
+        border-right: none;
+        border-top: none;
+    }
+    25%{
+        border: 2px solid white;
+        border-top: none;
+        border-left: none;
+    }
+    50%{
+        border: 2px solid white;
+        border-left: none;
+        border-bottom: none;
+    }
+    100%{
+        border: 2px solid white;
+        border-bottom: none;
+        border-right: none;
+    }
+}
+.b{
+    width: 60px;
+    height: 20px;
+    background-color: inherit;
+    border: 2px solid brown;
+    border-bottom: none;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    animation: b 0.5s linear 0.5s infinite;
+}
+@keyframes b{
+    0%{
+        border: 2px solid brown;
+        border-left: none;
+        border-bottom: none;
+    }
+    25%{
+        border: 2px solid brown;
+        border-bottom: none;
+        border-right: none;
+    }
+    50%{
+        border: 2px solid brown;
+        border-right: none;
+        border-top: none;
+    }
+    100%{
+        border: 2px solid brown;
+        border-top: none;
+        border-left: none;
+    }
+}
+/* loader-4 */
+.parent-four{
+    width: 450px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    margin: 10px;
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+.g{
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: brown;
+    position: absolute;
+    left:190px ;
+    top: 90px;
+    animation: g 1s linear 0.5s infinite;
+}
+@keyframes g{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1.5);
+        background-color: rgba(165, 42, 42, 0.412);
+    }
+}
+.cl{
+    clear: both;
+}
+.c,.e,.f,.d{
+    z-index: 30;
+    width:200px ;
+    height: 100px;
+    background-color: rgb(15, 130, 105);
+    position: absolute;
+    
+}
+.c{
+    animation: c 5s linear 0.5s ;
+}
+.d{
+    left: 200px;
+    animation: d 4s linear 1.5s ;
+}
+.e{
+    top: 110px;
+    animation: e 3s linear 2.5s ;
+}
+.f{
+    left: 200px;
+    top: 110px;
+    animation: f 2s linear 3.5s ;
+}
+@keyframes c{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%,100%{
+        transform: rotate(-45deg);
+    }
+}
+@keyframes d{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%,100%{
+        transform: rotate(45deg);
+    }
+}
+@keyframes e{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%,100%{
+        transform: rotate(45deg);
+    }
+}
+@keyframes f{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%,100%{
+        transform: rotate(-45deg);
+    }
+}
+/* loader-5 */
+.parent-five{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.j{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    animation: j 1s linear 0.5s infinite;
+}
+@keyframes j{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.k{
+    width: 65px;
+    height: 30px;
+    border-radius: 0px 0px 50px 50px;
+    background-color: white;
+    margin: 5px;
+    animation: k 1s linear 0.5s infinite;
+}
+@keyframes k{
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+/* loder-6 */
+.parent-six{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.l{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: l 1s linear 0.5s infinite;
+}
+@keyframes l{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.m{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+.n{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: brown;
+    
+}
+/* loder-7 */
+.parent-seven{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    font-size: 30px;  
+}
+ .parent-seven::after{
+    content: "";
+    animation: sev 10s linear 0.5s infinite;
+}
+@keyframes sev{
+    0%{
+        content: "L|";
+    }
+    10%{
+        content: "Lo|";
+    }
+    20%{
+        content: "Loa|";
+    }
+    30%{
+        content: "Load|";
+    }
+    40%{
+        content: "Loadi|";
+    }
+    50%{
+        content: "Loadin|";
+    }
+    60%{
+        content: "Loading|";
+    }
+    70%{
+        content: "Loading.|";
+    }
+    80%{
+        content: "Loading..|";
+    }
+    90%{
+        content: "Loading...|";
+    }
+    100%{
+        content: "L";
+    }
+}
+/* loader-8 */
+.parent-eight{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.o,.p{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+}
+.q{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    animation: q 5s linear 0.5s infinite;
+}
+@keyframes q{
+    0%{
+        right: 0px;
+    }
+    25%{
+        right: 0px;
+        bottom: 0px;
+    }
+    50%{
+        left: 0px;
+        bottom: 0px;
+    }
+    90%{
+        left: 0px;
+        top: 0px;
+    }
+}
